@@ -1,0 +1,72 @@
+<!--admin/dashboard.html-->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>User Dashboard</title>
+</head>
+<body>
+  <center><h2>Welcome to RanjeetZone Ecommerce Plateform</h2></center>
+  <p>Logged as: <span sec:authentication="name"></span></p>
+  <p>Has role: <span sec:authentication="authorities"></span></p>
+  <p><a th:href="@{/}">Home</a></p> 
+   <p><a th:href="@{/shop}">Shop</a></p>
+  <p><a th:href="@{/product}">Products</a></p>
+  <p><a th:href="@{/contactus}">Contact Us</a></p>
+  <p><a th:href="@{/aboutus}">About Us</a></p>
+   <p><a th:href="@{/logout}">Log out</a></p>
+  <br><br><br><br><br><br><br>
+  
+    <header align="center">
+           
+        <div class="search">
+                <a href=""
+                    ><input width="500"
+                        type="text"
+                        placeholder="search products"
+                        id="input"
+                    />
+                    <ion-icon class="s" name="search"></ion-icon>
+                </a>
+            </div>
+           
+        </header>
+        <section align="left">
+                <div class="section2">
+                    <div class="container">
+                        <div class="items">
+                            <div class="img img1">
+                                <img width="400" height="200" align="right" 
+                                    src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                    alt=""
+                                />
+                            </div>
+                         </div>
+                    </div>
+            </div>
+        </section>
+        
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="./ecommerce.js"></script>
+  
+  
+<footer align="center">
+
+ <br> <br><br> <br> <br> <br><br> <br> <br> <br><br> <br> <br> <br><br> <br>
+ 
+           <H3> <div class="logo"><a href="#">RanjeetZone Ecommerce Plateform</a></div></H3>
+            <div class="footer1">
+                Connect with us at
+                <div class="social-media">
+                    <a href="#"> <ion-icon name="logo-facebook"></ion-icon> </a>
+                    <a href="#"> <ion-icon name="logo-linkedin"></ion-icon> </a>
+                    <a href="#"> <ion-icon name="logo-youtube"></ion-icon> </a>
+                    <a href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="#"> <ion-icon name="logo-twitter"></ion-icon> </a>
+                </div>
+            </div>
+             
+</footer>
+</body>
+</html>
